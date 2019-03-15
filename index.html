@@ -9,7 +9,7 @@
 </body>
 <h1>REGISTRO DE DOTOS PERSONALES</h1>
 
-<form action="registrar.php" method="POST">
+<form action="registrar.php" method="GET">
     <!-- 
     Method
     Get la informACION POR LA URL
@@ -60,10 +60,21 @@
                 <br>
                 <div>
                         <label for="hob">hobbies</label>
-
-
+                        <input type="checkbox">Música
+                        <input type="checkbox">Bloggings
+                        <input type="checkbox">Deporte
+                        <input type="checkbox">Leer
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password">
                 </div>
         </fieldset>
-        
+        <div>
+            <input type="submit" value="registrar datos">
+            <input type="button" value="Cancelar">
+            <input type="reset" value="Limpiar formulario">
+            <button>Otro boton</button>
+        </div>
 </form>
 </html>
