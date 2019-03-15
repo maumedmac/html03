@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>REGISTRO DE DATOS PERSONALES</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <div>
+                <label for="ci">Carnet de Identidad</label>
+                <input type="text" name="ci" id="ci">
+            </div>
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese sus Nombres" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese sus Apellidos">
+            </div>
+            <div>
+                <label for="genero">Genero</label>
+                <input type="radio" name="genero" > Masculino
+                <input type="radio" name="genero" checked> Femenino
+            </div>
+            <div>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto">
+            </div>
+            <div>
+                <label for="correo">Correo</label>
+                <input type="email" name="correo">
+            </div>
+            <div>
+                <label for="color">Color</label>
+                <input type="color" name="color">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>OTRA INFORMACION</legend>
+            <div>
+                <select name="hobbies" id="hobbies">
+                    <option value="">Seleccionar ...</option>
+                    <option value="Musica">Musica</option>
+                    <option value="Deporte">Deporte</option>
+                    <option value="blogging">blogging</option>
+                    <option value="Leer">Leer</option>
+                </select>
+            </div>
+            <div>
+                <label for="hob">Hobbie</label>
+                <input type="checkbox"> Musica
+                <input type="checkbox"> Deporte
+                <input type="checkbox"> Leer
+                <input type="checkbox"> Blogging
+            </div>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password">
+            </div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </fieldset>
+        <div>
+            <input type="submit" value="Registrar Datos">
+            <input type="button" value="Cancelar">
+            <input type="reset" value="Limpiar Formulario">
+            <button>Otro boton</button>
+        </div>
+    </form>
+</body>
+</html>
