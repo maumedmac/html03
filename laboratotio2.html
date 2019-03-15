@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+        <h1>REGISTRO DE ESTUDIANTES</h1>
+
+        <form action="registrar.php" method="GET">
+            <!-- 
+            Method
+            Get la informACION POR LA URL
+            Post se envia a travez de las cabeceras del navegardor-->
+                <fieldset>
+                        <legend>DATOS PERSONALES</legend>
+                        <div>
+                                <label for="cod">Codigo Asigando es:</label>
+                                <input type="text" name="cod" id="cod" placeholder="Código">
+                        </div>
+                        <div>
+                            <label for="ci">Carnet de identidad</label>
+                            <input type="text" name="ci" id="ci" placeholder="Carnet de Identidad">
+                        </div>
+
+                        <div>
+                                <label for="exp">Expedido en:</label>
+                            <select name="exp" id="exp">
+                                <option value="0">La Paz</option>
+                                <option value="1">Cochabamba</option>
+                                <option value="2">Santa Cruz</option>
+                                <option value="3">Beni</option>
+                            </select>
+                        </div>    
+
+                        <div>
+                                <label for="nombre">Nombre</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Inserte el nombre" required>
+                        </div>
+                        <div>
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" name="apellidos" id="apellidos" placeholder="Inserte el apellidos">
+                        </div>
+                        <div>
+                            <label for="genero">Genero</label>
+                            <input type="radio" name="genero" checked>Masculino
+                            <input type="radio" name="genero" >Femenino
+                        </div>
+                        <!---
+                        <div>
+                            <label for="correo">Correo</label>
+                            <input type="email" name="correo">
+                        </div>
+                        <div>
+                            <label for="color">Color</label>
+                            <input type="color">
+                        </div>
+                    -->
+                        <div>
+                            <label for="foto">Foto</label>
+                            <input type="file">
+                        </div>
+                </fieldset>
+                <fieldset >
+                        <legend>Otra Informacion</legend>
+                       <!-- <div>
+                                <label for="hobbies">hobbie</label>
+                            <select name="hobbies" id="hobbies">
+                                <option value="0">Música</option>
+                                <option value="1">Bloggings</option>
+                                <option value="2">Deporte</option>
+                                <option value="3">Leer</option>
+                            </select>
+                        </div>
+                        <br>
+                    -->
+                        <div>
+                                <label for="hob">hobbies</label>
+                                <input type="checkbox">Música
+                                <input type="checkbox">Produccion de video
+                                <input type="checkbox">Bloggings
+                                <input type="checkbox">Deporte
+                                <input type="checkbox">Leer
+                        </div>
+                        <!--
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password">
+                        </div>
+                    -->
+                </fieldset>
+                <div>
+                    <input type="submit" value="registrar datos">
+                    <input type="reset" value="Limpiar">
+                    <input type="button" value="Cancelar">
+                    
+                <!--    <button>Otro boton</button>-->
+                </div>
+        </form>
+</body>
+</html>
